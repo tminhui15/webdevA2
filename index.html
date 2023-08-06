@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amusement Parks</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="heading-grid">
+        <div class="icon">
+            <img src="images/icon.JPG">
+        </div>
+
+        <h1>Amusement Parks</h1>
+    </div>
+
+    <div class="navigation">
+        <h2><a href="#About">About</a></h2>
+        <h2><a href="#BestAmusementParks">World's Best Amusement Parks</a></h2>
+        <h2><a href="#TypesOfParks">Types of Theme Parks</a></h2>
+        <h2><a href="#Risks">Risks</a></h2>
+        <h2><a href="#Sources">Sources</a></h2>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn"><b>Navigation</b></button>
+        <div class="dropdown-content">
+            <a href="#About">About</a>
+            <a href="#BestAmusementParks">World's Best Amusement Parks</a>
+            <a href="#TypesOfParks">Types of Theme Parks</a>
+            <a href="#Risks">Risks</a>
+            <a href="#Sources">Sources</a>
+        </div>
+    </div>
+
+    <div class="grid-container reveal">
+
+        <div class="About-Image">
+            <img src="images/img.png">
+        </div>
+
+        <div class="About-Box">
+            <h3 id="About">About</h3>
+            <div>An amusement park is a park featuring a variety of attractions, such as rides, games and other
+                entertainment-related activities.
+                Meanwhile, a theme park is a type of amusement park built with structures that feature a specific theme
+                and
+                usually has many zones with various themes.
+                This website aims to highlight on additional information of amusement parks and the risks of rides
+                at
+                these amusement parks.</div>
+        </div>
+
+        <div class="Types">
+            <h3 id="TypesOfParks">Types of Theme Parks</h3>
+            <ul>
+                <li>Water Theme Park</li>
+                <li>Zoological Theme Park</li>
+                <li>Historical Theme Park</li>
+                <li>Regional Theme Park</li>
+                <li>Pop Culture Theme Park</li>
+                <li>Eco Theme Park</li>
+            </ul>
+
+            <img src="images/img11.jpg">
+
+        </div>
+
+    </div>
+
+    <div class="grid-container2 reveal">
+
+        <!--Container for description beside slideshow-->
+        <div class="description-container">
+            <h3 id="BestAmusementParks">World's Best Amusement Parks</h3>
+            <div>These are 10 of the world's best amusement parks in terms of entertainment, rides and quality. So,
+                do
+                visit them if you ever get the chance!</div>
+        </div>
+
+        <!-- Container for slideshow -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="slide fade img1">
+                <img src="images/img1.jpg" style="width:100%">
+                <div class="text">Tokyo DisneySea, Japan</div>
+            </div>
+
+            <div class="slide fade img2">
+                <img src="images/img2.jpg" style="width:100%">
+                <div class="text">Disneyland Park, United States</div>
+            </div>
+
+            <div class="slide fade img3">
+                <img src="images/img3.jpg" style="width:100%">
+                <div class="text">Universal Studios Japan, Japan</div>
+            </div>
+
+            <div class="slide fade img4">
+                <img src="images/img4.jpg" style="width:100%">
+                <div class="text">Tivoli Gardens, Denmark</div>
+            </div>
+
+            <div class="slide fade img5">
+                <img src="images/img5.jpg" style="width:100%">
+                <div class="text">Universal Islands of Adventure, United States</div>
+            </div>
+
+            <div class="slide fade img6">
+                <img src="images/img6.jpg" style="width:100%">
+                <div class="text">Efteling, Netherlands</div>
+            </div>
+
+            <div class="slide fade img7">
+                <img src="images/img7.jpg" style="width:100%">
+                <div class="text">Six Flags Magic Mountain, United States</div>
+            </div>
+
+            <div class="slide fade img8">
+                <img src="images/img8.jpg" style="width:100%">
+                <div class="text">Disney's Animal Kingdom, United States</div>
+            </div>
+
+            <div class="slide fade img9">
+                <img src="images/img9.jpg" style="width:100%">
+                <div class="text">Europa-Park, Germany</div>
+            </div>
+
+            <div class="slide fade img10">
+                <img src="images/img10.jpg" style="width:100%">
+                <div class="text">Dollywood, United States</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+
+    </div>
+
+    <div class="reveal">
+        <h3 id="Risks">Risks at Amusement Parks</h3>
+    </div>
+
+    <div class="grid-container3 reveal">
+
+        <div>
+            <h4>Common Types of Amusement Parks Injuries</h4>
+            <ul>
+                <li>Head, neck or back injury</li>
+                <li>Stroke</li>
+                <li>Traumautic brain injury</li>
+                <li>Lacerations, broken bones or torn ligaments</li>
+                <li>Death</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Common Causes of Amusement Park Injuries</h4>
+            <ul>
+                <li>Improper design of rides that engineers overlook during the design phase.</li>
+                <li>Mechanical failures such as track or safety belt issues, detachments etc.</li>
+                <li>Negligence from employees, not giving enough attention when operating the ride.</li>
+                <li>Passenger not following the safety instructions of the ride.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>How Many People Get Injured at Amusement Parks Yearly?</h4>
+            <p>Approximately 8,000 people get injured from amusement park rides in a year and these figures only include
+                injuries severe enough to require emergency room care.</p>
+        </div>
+
+        <div>
+            <h4>Safety Tips!</h4>
+            <ul>
+                <li>Don't ride if the ride appears poorly maintained or if the operator looks distracted.</li>
+                <li>Take breaks to prevent getting sick, hydrate yourself regularly.</li>
+                <li>Keep your head upright.</li>
+                <li>Do research on the amusement park, such as whether any accidents have occured in the past.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="Accidents reveal">
+        <h4>Accidents at Amusement Parks in the United States</h4>
+        <p><b>1. Accident at Silver Dollar City</b></p>
+        <p>Silver Dollar City, located near Branson, Missouri, opened in the 1960s, welcoming guests to their
+            100-acre
+            park featuring more than 40 amusement park rides.
+            However, on the 9th of July in 1980, an accident occured. James Polley, a 23-year-old boy went on the
+            Fire
+            In the Hole rollercoaster.
+            The workers were conducting a maintenance check and were unaware that Polley and other passengers were
+            on
+            the ride.
+            They switched the ride's main track to the maintenance track, resulting in a low-hanging door where
+            Polley
+            did not duck in time, leading to serious injuries that led to his death.</p>
+
+        <p><b>2. Ride Derailment at Daytona Beach Broadwalk</b></p>
+        <p>On the 14th of June in 2018, passengers boarded the Sand Blaster roller coaster at Daytona Beach
+            Broadwalk in
+            Florida.
+            The ride was fine until the roller coaster derailed, causing 6 out of the 10 passengers on the ride to
+            sustain injuries.
+            Two of the passengers fell out of the roller coaster, resulting in severe injuries.
+            According to the investigation, the ride was operating at an excessive speed and the presence of
+            significant
+            damage to the track
+            and axle systems was apparent, therefore, causing a derailment.</p>
+
+        <p><b>3. Ride Mid-Air Malfunction at Ohio State Fair</b></p>
+        <p>On the 26th of July in 2017, the opening day of the Ohio State Fair, an accident occured.
+            The Fire Ball ride broke down in mid-air, leading to one death and injuries to seven people.</p>
+    </div>
+
+    <div class="Sources reveal">
+        <h3 id="Sources">Sources</h3>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Amusement_park" target="_blank">About Amusement Parks</a>
+            </li>
+            <li><a href="https://www.travelandleisure.com/attractions/amusement-parks/best-amusement-parks-in-the-world"
+                    target="_blank">Top Amusement Parks in the World</a></li>
+            <li><a href="https://www.allenandallen.com/the-unamusing-truth-the-risks-of-amusement-parks/"
+                    target="_blank">Risks of Amusement Parks</a></li>
+            <li><a href="https://www.g3helpme.com/blog/how-common-are-amusement-park-accidents#:~:text=Common%20Amusement%20Park%20Accidents,treatment%20in%20an%20emergency%20room"
+                    target="_blank">Amusement Park Accidents Statistics</a></li>
+            <li><a href="https://ehlinelaw.com/blog/top-seven-most-common-amusement-park-injuries#the-worst-amusement-park-mishaps-in-us-history"
+                    target="_blank">US Amusement Park Accidents</a></li>
+            <li><a href="https://trashcansunlimited.com/blog/8-types-of-theme-parks/" target="_blank">Types of Theme
+                    Parks</a></li>
+        </ul>
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
+<!-- 
+    References:
+    https://www.w3schools.com/css/css_navbar_horizontal.asp
+    https://www.w3schools.com/howto/howto_js_slideshow.asp
+    https://alvarotrigo.com/blog/css-animations-scroll/
+-->
