@@ -1,0 +1,363 @@
+html {
+    font-family: "Lucida Sans", sans-serif;
+    font-size: smaller;
+}
+
+body {
+    margin: 0%;
+    background: #726351;
+    color: #fcf0e0;
+}
+
+h1 {
+    text-align: left;
+    color: #d6b069;
+}
+
+h2 {
+    display: inline;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+h4 {
+    color: #ffffff;
+}
+
+.icon {
+    text-align: right;
+}
+
+.icon img {
+    max-width: 100%;
+    margin-top: 2px;
+    width: 5rem;
+}
+
+.heading-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 1fr;
+    grid-gap: 10px;
+    background: #fcf0e0;
+}
+
+/* Navigation bar */
+.navigation {
+    max-width: 100%;
+    background-color: #272727;
+    overflow: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.navigation a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: #d6b069;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #272727;
+    color: #d6b069;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Dropdown button container */
+.dropdown {
+    display: none;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #272727;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: #d6b069;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #272727;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #272727;
+}
+
+/* For About Image/Icon */
+.About-Image {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.About-Image img {
+    max-width: 100%;
+    width: 10rem;
+}
+
+/* About Section */
+#About {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+/* Types of Theme Parks Section */
+.Types {
+    text-align: center;
+}
+
+.Types img {
+    max-width: 100%;
+    width: 20rem;
+}
+
+.Types ul {
+    margin-right: 3rem;
+}
+
+/* grid container for About & Types of theme parks section */
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr) minmax(0, 1fr);
+    margin: 1rem;
+    grid-gap: 1rem;
+    max-width: 100%;
+}
+
+
+/* description container for Best Amusement Parks section */
+.description-container div {
+    text-align: center;
+}
+
+#BestAmusementParks {
+    text-align: center;
+}
+
+/* grid container for Best Amusement Parks & slideshow section */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin: 2rem;
+    grid-gap: 2rem;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* slideshow container for best amusement park images */
+.slideshow-container {
+    max-width: 100%;
+    width: 40rem;
+    margin: auto;
+    position: relative;
+}
+
+/* Hide the images */
+.slide {
+    display: none;
+}
+
+.img1 {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* To add a see-through background when hovering over the buttons */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption */
+.text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    text-align: center;
+}
+
+.slideshow-container:hover .text {
+    opacity: 1;
+}
+
+.dot-container {
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation for the slideshow container */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#Risks {
+    background-color: #524128;
+    line-height: 50px;
+    text-align: center;
+    color: #d6b069;
+}
+
+/* grid container for Risks section */
+.grid-container3 {
+    display: grid;
+    text-align: center;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+    grid-auto-rows: minmax (1fr, auto) minmax (1fr, auto);
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.grid-container3 ul {
+    margin-right: 3rem;
+}
+
+/* to make bullet points follow/stay beside the texts */
+ul {
+    list-style-position: inside;
+}
+
+.Accidents {
+    text-align: center;
+    margin: 4rem;
+}
+
+.Sources {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.Sources a {
+    text-decoration: none;
+    color: #fcf0e0;
+}
+
+.Sources a:hover {
+    text-decoration: underline;
+    color: #d6b069;
+}
+
+/* scrolling animation for the content */
+.reveal {
+    position: relative;
+    opacity: 0;
+    transform: translateY(55px);
+    transition: 2.5s all ease;
+    background-color: transparent;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    /*.navigation a {
+       float: none;
+       display: block;
+   }*/
+
+    .navigation a {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
